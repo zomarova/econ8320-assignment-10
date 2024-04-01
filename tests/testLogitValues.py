@@ -17,7 +17,7 @@ si = {}
 for i in code:
     for j in i['source']:
         if "#si-exercise" in j:
-            compile("".join(i['source']), '<string>', 'exec')
+            exec(compile("".join(i['source']), '<string>', 'exec'))
 
 
 # todo: replace this with an actual test
