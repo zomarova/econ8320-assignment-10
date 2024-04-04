@@ -28,7 +28,7 @@ class TestCase(unittest.TestCase):
       system.stdout = io.StringIO()
 
 
-      data = pd.read_csv("assignment8Data.csv")
+      data = pd.read_csv("tests/files/assignment8Data.csv")
       x = data.loc[:100, ['sex','age','educ']]
       y = data.loc[:100, 'white']
       reg = RegressionModel(x, y, create_intercept=True, regression_type='logit')
